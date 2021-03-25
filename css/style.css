@@ -1,0 +1,637 @@
+:root {
+    --naranja-fuerte: #d57400;
+    --negro: #000;
+    --rojo: #e0201c;
+    --blanco: rgb(255, 255, 255);
+}
+
+.banner {
+    background-image: url("../imagenes/Encabezado.jpg");
+    width: 100%;
+    height: 180px;
+    text-align: center;
+    transition: 1s;
+}
+
+h1 {
+    font-family: "Open Sans Condensed", sans-serif;
+    font-weight: bold;
+}
+
+h2 {
+    font-family: "Open Sans Condensed", sans-serif;
+    font-weight: bold;
+    font-size: x-large;
+}
+h3 {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+h4 {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+h5 {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 500;
+    font-size: 16;
+}
+
+p {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.decorationlist {
+    padding-left: 30px;
+}
+
+.ruta {
+    width: 100%;
+    height: 80px;
+    background-color: #ffffff;
+    color: var(--negro);
+    font-family: "Open Sans Condensed", sans-serif;
+    font-weight: lighter;
+}
+
+.ruta p {
+    font-family: "Open Sans Condensed", sans-serif;
+    padding-top: 25px;
+    padding-left: 50px;
+}
+
+.ruta p a {
+    text-decoration: none;
+    color: var(--negro);
+}
+
+.ruta p a:hover {
+    color: var(--naranja-fuerte);
+}
+
+.carousel-inner {
+    width: 100%;
+    height: 550px;
+    transition: 1s;
+}
+
+.carousel-inner img {
+    height: 550px;
+    object-fit: cover;
+}
+
+#space {
+    width: 100%;
+    float: left;
+    padding: 30px 50px;
+    padding-top: 0;
+}
+
+#logo {
+    margin: 0 auto;
+    width: 130px;
+    margin-top: 25px;
+}
+
+/* INICIO */
+
+.productos {
+    padding-top: 50px;
+    width: 55%;
+    float: left;
+}
+
+.imgslider {
+    object-fit: cover;
+    width: 100%;
+    height: 150px;
+    margin-bottom: 30px;
+    transition: 1s height;
+}
+
+.conocenos {
+    width: 40%;
+    float: right;
+    margin-top: 100px;
+}
+
+.conocenos .cuentas {
+    vertical-align: middle;
+    height: 100px;
+}
+
+.conocenos .cuentas img {
+    width: 100px;
+    float: left;
+    object-fit: cover;
+}
+
+.info {
+    float: left;
+    margin-top: 30px;
+}
+
+#buttonspace {
+    text-align: center;
+    width: 100%;
+}
+
+#buttontienda {
+    border: 0px;
+    border-radius: 5px;
+    width: 468px;
+    height: 40px;
+    color: white;
+    background-color: var(--rojo);
+    font-family: "Fira Sans", sans-serif;
+    font-weight: bolder;
+}
+
+.cuentastexto {
+    width: 100%;
+    padding-top: 20px;
+}
+
+#crea {
+    float: left;
+    margin-top: 10px;
+    border: 0px;
+    border-radius: 5px;
+    width: 40%;
+    height: 40px;
+    color: white;
+    background-color: var(--rojo);
+    font-family: "Fira Sans", sans-serif;
+    font-weight: bolder;
+}
+
+#inicia {
+    float: right;
+    margin-top: 10px;
+    border: 0px;
+    border-radius: 5px;
+    width: 40%;
+    height: 40px;
+    color: white;
+    background-color: var(--rojo);
+    font-family: "Fira Sans", sans-serif;
+    font-weight: bolder;
+}
+
+@media screen and (max-width: 1280px) {
+    /* .banner {
+        height: 130px;
+    } */
+    .carousel-inner {
+        height: 330px;
+    }
+    .carousel-inner img {
+        height: 330px;
+    }
+    .conocenos {
+        width: 100%;
+        float: left;
+        margin-top: 30px;
+    }
+
+    .productos {
+        width: 100%;
+    }
+
+    .imgslider {
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    /* .banner {
+        height: 100px;
+    } */
+    .carousel-inner {
+        height: 300px;
+    }
+    .imgslider {
+        height: 150px;
+    }
+}
+
+/*NOSOTROS*/
+
+.descripcion {
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+.contenido {
+    width: 100%;
+}
+.listas {
+    width: 40%;
+    padding-right: 25px;
+    float: left;
+}
+
+.fotografia {
+    float: right;
+    width: 50%;
+    margin-right: 5%;
+    height: 300px;
+    transition: 0.7s;
+}
+
+.fotografia img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 1050px) {
+    .listas {
+        width: 100%;
+        padding: 0;
+    }
+    .fotografia {
+        float: left;
+        width: 100%;
+        margin: 0 auto;
+        height: 450px;
+        padding-top: 25px;
+    }
+}
+
+/* AREA DE PRODUCTOS */
+
+.contenedor-productos {
+    width: 100%;
+    height: auto;
+
+    text-align: center;
+}
+
+.producto {
+    width: 26%;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 34px;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.izquierda {
+    margin-left: 6%;
+}
+
+.derecha {
+    margin-right: 6%;
+}
+
+.producto img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.producto .descripcion-producto {
+    width: 100%;
+    height: 130px;
+    margin: 0 auto;
+}
+
+/* PRODUCTO */
+
+.cuadrado {
+    width: 45vw;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.cuadrado img {
+    object-fit: cover;
+    width: 90%;
+}
+
+.descripción-producto {
+    float: right;
+    width: 50%;
+    padding-left: 80px;
+}
+
+.contenedor-objeto-producto {
+    float: left;
+    width: 40%;
+}
+
+.descripción-producto .firstline {
+    padding-top: 50px;
+}
+
+.contenedor-objeto {
+    float: left;
+    width: 40%;
+}
+.contenedor-descripción {
+    float: right;
+    width: 50%;
+    padding-left: 80px;
+}
+
+.cantidad {
+    float: right;
+}
+
+.secondline {
+    width: 100%;
+}
+
+.secondline .talla {
+    width: 45%;
+    float: left;
+}
+
+.secondline .cantidad {
+    width: 45%;
+    float: right;
+}
+
+.secondline .cantidad input {
+    width: 100%;
+    height: 36px;
+}
+
+.thirdline {
+    width: 100%;
+}
+
+.thirdline .tono {
+    width: 100%;
+    float: left;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#buttonenvia {
+    height: 40px;
+    color: white;
+    background-color: var(--rojo);
+    font-family: "Fira Sans", sans-serif;
+    font-weight: bolder;
+}
+
+/* CONTACTO*/
+
+.contenedor-datos {
+    float: left;
+    width: 40%;
+}
+.contenedor-formulario {
+    float: right;
+    width: 50%;
+}
+
+#buttonsend {
+    height: 40px;
+    color: white;
+    background-color: var(--rojo);
+    font-family: "Fira Sans", sans-serif;
+    font-weight: bolder;
+}
+
+/* FOOTER */
+
+.contenedor-pie {
+    width: 100%;
+    height: 150px;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: #F4BF16;
+    font-family: "Open Sans Condensed", sans-serif;
+    text-align: center;
+    float: left;
+}
+
+#ancho {
+    width: 70%;
+    font-weight: 400;
+    text-align: center;
+}
+
+#iniciolink {
+    position: absolute;
+}
+#navul .nav-item {
+    padding: 0 25px;
+}
+@media screen and (max-width: 992px) {
+    #navul .nav-item {
+        padding: 0;
+    }
+
+    #iniciolink {
+        position: relative;
+    }
+}
+
+/* AREA DE EVENTOS */
+
+/*Contenedor general, de fechas y calendario*/
+.contenedor-calendario {
+    scrollbar-color: #c2c2c2 #ffffff;
+    width: 95%;
+    height: auto;
+    margin: 0;
+    margin-left: 50px;
+}
+
+/*Incluye el titulo y los eventos*/
+.fechas {
+    width: 40%;
+    float: left;
+}
+
+.evento-titulo {
+    width: 100%;
+    height: 100px;
+}
+
+.evento-titulo h1 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.evento-titulo p {
+    margin: 0 auto;
+    font-size: 1.2em;
+}
+
+/*Lista de eventos*/
+/*Area con scrollbar*/
+.eventos {
+    width: 100%;
+    height: 350px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: justify;
+}
+
+/*Aqui va cada evento*/
+.evento {
+    margin: 32px 0 0 0;
+}
+
+.evento h2 {
+    margin: 0;
+}
+
+.eventos .evento p {
+    margin: 0;
+    margin-left: 15px;
+    padding: 0;
+}
+
+/*Area para el calendario*/
+/*Incluye calendario y lista*/
+.calendario {
+    float: right;
+    height: 450px;
+    width: 60%;
+    margin: 0% auto;
+    transition: 1s;
+}
+
+.calendario .imagen-calendario {
+    width: 600px;
+    height: 390px;
+    margin: 0 auto;
+    transition: 0.5s width;
+}
+
+.calendario .imagen-calendario img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.barra-mes {
+    width: 600px;
+    margin: 0 auto;
+    height: 60px;
+}
+
+.eventfooter {
+    float: left;
+    width: 100%;
+    padding-top: 30px;
+}
+
+#mes-selector {
+    width: 232px;
+    height: 40px;
+    font-size: 1em;
+    margin: 10px 0;
+    border: thin solid #a8a8a8;
+    border-radius: 5px;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    background-image: linear-gradient(45deg, transparent 50%, gray 50%),
+        linear-gradient(135deg, gray 50%, transparent 50%),
+        linear-gradient(to right, #ccc, #ccc);
+    background-position: calc(100% - 20px) calc(1em + 2px),
+        calc(100% - 15px) calc(1em + 2px), calc(100% - 2.5em) 0.5em;
+    background-size: 5px 5px, 5px 5px, 1px 1.5em;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 1170px) {
+    .calendario {
+        height: 400px;
+        width: 60%;
+    }
+
+    .calendario .imagen-calendario {
+        width: 492px;
+        height: 320px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .barra-mes {
+        width: 492px;
+    }
+
+    .eventos {
+        width: 100%;
+        height: 320px;
+    }
+}
+
+/* HEY ARNOLD*/
+
+@media screen and (max-width: 960px) {
+    .calendario {
+        height: 450px;
+        width: 100%;
+    }
+
+    .calendario .imagen-calendario {
+        width: 600px;
+        height: 390px;
+    }
+
+    .barra-mes {
+        width: 600px;
+    }
+
+    .fechas {
+        width: 100%;
+    }
+
+    .eventos {
+        width: 100%;
+        height: auto;
+    }
+
+    .footer {
+        margin-top: 50px;
+    }
+
+    .descripción-producto {
+        float: left;
+        width: 100%;
+        padding-left: 0px;
+        padding-top: 30px;
+    }
+
+    .contenedor-objeto-producto {
+        float: left;
+        width: 100%;
+    }
+
+    .cuadrado {
+        width: 85vw;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .calendario .imagen-calendario {
+        width: 492px;
+        height: 320px;
+        margin: 0;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .barra-mes {
+        margin-left: 0;
+    }
+}

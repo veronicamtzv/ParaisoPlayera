@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paraíso Playera</title>
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/styleslider.css">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bangers&family=Barlow+Condensed:wght@500&family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;400;500;600&display=swap"
+    rel="stylesheet">
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+</head>
+
+<body>
+
+  <!-- jQuery para el slider de productos -->
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+  <!-- banner de la marca -->
+  <div class="banner">
+    <a href="index.html"><img id="logo" class="animate__animated animate__pulse animate__infinite" src="imagenes/Logo.png"
+        alt="Logotipo"></a>
+  </div>
+
+  <!-- Barra de navegacion con Bootstrap -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-danger sticky-top">
+    <div class="container-fluid  m-auto .sticky-top">
+
+      <div class="navbar-nav" id="iniciolink" style="position: relative;">
+        <a class="nav-link active" href="index.html">Paraiso Playera</a>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav" id="navul">
+
+          <li class="nav-item">
+            <a class="nav-link" href="nosotros.html">Nosotros</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#"
+              id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Productos
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item disabled" style="font-weight: bold; color: black;" href="#">Hombres</a></li>
+              <li><a class="dropdown-item decorationlist" href="hombres.html">Playeras</a></li>
+              <li><a class="dropdown-item decorationlist disabled" href="">Sudaderas</a></li>
+              <li><a class="dropdown-item decorationlist disabled" href="">Gorras</a></li>
+              <li><a class="dropdown-item disabled" style="font-weight: bold; color: black;" href="#">Mujeres</a></li>
+              <li><a class="dropdown-item decorationlist" href="mujeres.html">Sudaderas</a></li>
+              <li><a class="dropdown-item decorationlist disabled" href="">Playeras</a></li>
+              <li><a class="dropdown-item decorationlist disabled" href="">Gorros</a></li>
+              <li><a class="dropdown-item decorationlist disabled" href="">Vestidos</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#"
+              id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Categorias
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="categorias.html">Cómics</a></li>
+              <li><a class="dropdown-item disabled" href="#">Películas</a></li>
+              <li><a class="dropdown-item disabled" href="#">Videojuegos</a></li>
+              <li><a class="dropdown-item disabled" href="#">Series</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="eventos.html">Eventos</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="ruta">
+    <p><a href="index.html">Inicio</a> > <a href="#">Hombres</a> > <a href="hombres.html">Playeras</a> > <a href="#">BTTF 35</a></p>
+  </div>
+
+  <div id="space" class="product">
+    <div class="contenedor-objeto">
+      <div class="cuadrado"><img src="imagenes/BTTF_35.jpg" alt="BTTF 35"></div>
+    </div>
+    <div class="descripción-producto"> <h1>BTTF 35</h1>
+        <div class="firstline">
+            <h3>$489</h3>
+        </div>
+        <div class="secondline">
+            <div class="talla"> 
+                <h4>Talla</h4>
+                <select class="form-select" aria-label="Default select example">
+                    <option value="1">CH</option>
+                    <option value="2">M</option>
+                    <option value="3">G</option>
+                  </select>
+            </div>
+            <div class="cantidad">
+                <h4>Cantidad</h4>
+                <input type="number" min="0" max="10" placeholder="0">
+            </div>
+        </div>
+        <div class="thirdline">
+            <div class="tono"> 
+              <h4>Color</h4>
+                <select class="form-select" aria-label="Default select example">
+                    <option value="1">Negro</option>
+                  </select>
+            </div>
+        </div>
+
+      <div class="d-grid gap-2 col-6 mx-auto">
+        <button id="buttonenvia" class="btn btn-primary" type="button">Envía</button>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <footer>
+    <div class="contenedor-pie">
+      <table class="pie" width="80%">
+        <tbody>
+          <tr>
+
+            <td id="ancho">
+              Boletín Informativo <br>
+              Suscríbete para recibir información sobre promociones
+            </td>
+
+            <td id="ancho">
+              Redes Sociales <br>
+              <a
+                href="https://www.facebook.com/Para%C3%ADso-Playera-310179522787329/"><img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAACEElEQVRIS62Wf30CMQzFv3UwB4CDOQAUTMLmYHMwHMzCJMwB4GAogDnYFNw+KW1Jc71eD7i/jpLkvbzmxzl6jwM6dWp/x7/0ubzL0+J3tgweLcGVeQIY8ou2mkieYaTaTzxy8iA2uxjwvsBzYFZgYo4mXckPcNIBTMZuDt0xz7BGoZZxz2+hwa3UK2A7PdtxD2AN7HRpaq9G4BYVemooYCdVkxko4BYZk80fsAG+FaVH4EPFt8AZ+4nAvm0O0Infr9HBqmelHsp4vBcDUBZQgRtgt4audMe+zlbQqeJqkTs1vPiLvK+AtORD+B253LW49mey6fkCnsqlV8w4ZTZS1dEu2VtgkXI5UPMh47PvrX18BXC2JBLHFbhtvmV6/A/g3s6nnVSybSG5W3legGflvQa3i7HtyAxSD28VQGU5NK/9+Qbc+yWJeMfXS70HJ9VvtpYehp64LbRSxinx0E7VNpIt8xlgZOvE9yCvm4UsRWppq3u3kye7D1MrBldVXZvV6QtEF1fLdkr24b4TyA7ccuATqHWAtEwtV8m41w01YF80Zh/H+y9WemMf+xh2VteWxMAMuhw3ACfirVJL9JLc+ixKre9Yj8zMfwrwrRlnJIfWogeRvjuOwk2SOhkvwJ0KIzOxE3Dd+AUeybY2q7WfDB37edvSNhM0aDQNJTcGXmqpMZ86A7WdWgO12FV73zP6B6qxtCEl63+UAAAAAElFTkSuQmCC" /></a>
+              <a href="https://www.instagram.com/paraisoplayera/"><img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAACxklEQVRIS62XTW4UMRCFP5+A5AQJJ2A4ARmkCAmQyA2APUITCSGxApZZQIIQezgBCIH4F+EEhBvACUhOYPTcttt2290dkd4k3bbrVb16Va4xnPljAOutpv/nQFopnvZmCNtLw2Nn6pFVgGuOhG8BUO9TYGORmxBCaWRwaBPYGGcnnvkD/J7KYBJxSSMCewjsAGvDDI1Gfwy8AR6D8U6k6emTlth1nm8Br4eAYVuL5sF3ObAEc1QKrpZjRfpzOso5eXaOCvxiT38HWQN+Cdxs52hK9faXP3uh++v2vwJuJe9VccnDc1PiaKwLdOHXjgAP7sR2Pj3jIw5RmDWwfydK5QcgVoJyF2B2wF4CBCZaFanyGoD1vg5WQVWplqi+954NaL3tQWsBr4D9DtzFs+gF5RxZgj2cCZzZ96DOmQfAtl/9BGbPg6zA7BeAoYUugTFg4yNO6xTRKzb0fAMup0IBvoLZ9oBKQaXZqKwy4IzOgupIzC7YA+A+sNcQ1j3gCRAoL7epng8DG0U5mS2wSY7j2eDt5z6yQf4/AFc7Zqqs1aiORnzEA6PB24/AlUbE74HrpwSOpry3WX61uAscgBHlTxvAd4Hn41SPiqtaTmkDeAdcy8HNW7A3/Le54kory10ORY7jreWjdjV5B6zKSdR8AV54Ky1hadnnuEtj2atbVAfvZPhZ39mye3sFVg0keTKtjIpL9+5UyxSVKi21R9+hVEJmM28cAyWsgznu9sQJJNvkczQ12jQkVv+sqWQzvQPKOhb/ybV4ZuDJtdj3vNJHDQKiMbka5zjQnNtO/FWZzWGVQcAZ0J2qhu7B5wCXotK7PQHXDYMe/CaX46ZRCU0iktI3JoRTsqYoNew9yifOHqs2+tTkISfCZDGiKmdY0cULvxVYMYFkzaRVj1PAjXOxEbn1mqpPUSdzcz/cN5fq/3QmznTxB90/Aw/QJApzu6AAAAAASUVORK5CYII=" /></a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <hr>
+      © 2021, Paraíso Playera. | Todos los derechos reservados. |
+    </div>
+  </footer>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>
